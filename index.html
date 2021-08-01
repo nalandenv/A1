@@ -5,19 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Local & Session storage</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <div class="header">
-            <h1>Enter Your Information</h1>
+            <h1>Add New User</h1>
         </div>
         <div class="element">
             <label for="Name">Name</label>
-            <input type="text" name="name" placeholder="John" required>
-            <button class="btn">SET</button>
+            <input type="text" id="name" name="name" placeholder="John" required>
         </div>
-    </div>
+        <div class="element">
+            <label for="age">Age</label>
+            <input type="number" id="age" placeholder="23" min="0" max="140" required>
+        </div>
+        <div class="check">
+            <label for="save"><input type="checkbox" id="save" value="1" name="save"> Save User</label>
+        </div>
+        <div>
+            <button class="btn">ADD</button>
+            <button id="clear" class="btn">Wipe Saved User Data</button>
+        </div>
+        <section id="show">
 
+        </section>
+    </div>
     <script src="index.js"></script>
 </body>
 </html>
